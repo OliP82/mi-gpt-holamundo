@@ -5,8 +5,8 @@ import traceback
 # Usa tu clave desde Streamlit Secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-st.set_page_config(page_title="Traductor GPT", layout="centered")
-st.title("🌍 Traductor GPT: Hola mundo")
+st.set_page_config(page_title="Traductor GPT de Olivia", layout="centered")
+st.title("🌍 Traductor GPT de Olivia: Hola mundo")
 
 # Lista de idiomas disponibles
 idiomas = [
@@ -19,7 +19,7 @@ idiomas = [
 idioma_seleccionado = st.selectbox("Selecciona un idioma", idiomas)
 
 # Botón para lanzar la traducción
-if st.button("Traducir 'Hola mundo'"):
+if st.button("Traducir 'Hola mundo' (by Olivia)"):
 
     prompt = f"Traduce 'Hola mundo' al idioma {idioma_seleccionado}. Devuélveme solo la traducción, sin explicaciones."
 
